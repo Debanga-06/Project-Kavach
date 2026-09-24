@@ -24,12 +24,15 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.CORS_ORIGINS,
+    allow_origins=[
+        "https://project-kavach-woad.vercel.app",
+        "http://localhost:5173",
+        "http://localhost:3000",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 # Import models so they're registered on Base.metadata before create_all.
 from app.models import user, scan, ai_report  # noqa: E402,F401
 
