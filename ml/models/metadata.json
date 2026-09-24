@@ -1,0 +1,38 @@
+{
+  "model": "LogisticRegression",
+  "feature_names": [
+    "url_length",
+    "domain_length",
+    "subdomain_count",
+    "digit_count",
+    "special_char_count",
+    "hyphen_count",
+    "is_https",
+    "is_ip_host",
+    "has_at_symbol",
+    "suspicious_keyword_count",
+    "suspicious_tld"
+  ],
+  "trained_at": "2026-08-23T09:20:10.820137+00:00",
+  "dataset": "urls.csv",
+  "n_examples": 780,
+  "metrics": {
+    "precision": 0.9783,
+    "recall": 1.0,
+    "f1": 0.989,
+    "roc_auc": 0.9975,
+    "confusion_matrix": [
+      [
+        64,
+        2
+      ],
+      [
+        0,
+        90
+      ]
+    ],
+    "n_train": 624,
+    "n_test": 156
+  },
+  "data_source": "SYNTHETIC \u2014 bootstrap dataset, not a real labeled phishing corpus. Retrain on real data (PhishTank/OpenPhish/internal) before production use."
+}
