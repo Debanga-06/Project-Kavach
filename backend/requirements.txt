@@ -7,7 +7,7 @@ email-validator==2.2.0
 
 # Database
 sqlalchemy==2.0.35
-psycopg[binary]==3.2.2
+psycopg[binary]==3.2.10
 
 # Auth
 argon2-cffi==23.1.0
